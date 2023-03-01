@@ -87,8 +87,7 @@
                                 <?php for ($i = 0; $i <= 99; $i++) : ?>
                                     <div class="box-item">
                                         <div class="box-item-tool"></div>
-                                        <div class="box-item-number"><?= $i ?></div>
-
+                                        <div class="box-item-number"><?= $i <= 9 ? '0' . $i : $i ?></div>
                                     </div>
                                 <?php endfor; ?>
                             </div>
