@@ -1,0 +1,111 @@
+.bg-body {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    gap: 10px;
+}
+
+.box-item {
+    width: 65px;
+    height: 60px;
+    background: #d1d1d1;
+    transition: all 0.2s;
+    border-radius: 11px;
+
+}
+
+.box-item .box-item-number {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.box-item:hover {
+    outline: 2px solid red;
+}
+
+.box-item:hover .box-item-number {
+    font-size: 30px;
+}
+
+.content-pay .text{
+    text-align: center;
+}
+.content-pay .top-number,
+.content-pay .bottom-number {
+   
+    width: 300px;
+    height: auto;
+    background: cornflowerblue;
+    padding: 10px;
+    border-radius: 11px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    box-shadow: 1px 3px 3px 0px #000;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .box-container {
+        grid-template-columns: repeat(5, 2fr) !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .box-container {
+        grid-template-columns: repeat(5, 2fr) !important;
+    }
+
+    .box-item {
+        width: 90px !important;
+        height: 70px;
+        background: #d1d1d1;
+        transition: all 0.2s;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .box-container {
+        grid-template-columns: repeat(6, 2fr) !important;
+    }
+
+    .box-item {
+        width: 100px !important;
+        height: 70px;
+        background: #d1d1d1;
+        transition: all 0.2s;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .box-container {
+        grid-template-columns: repeat(10, 2fr) !important;
+    }
+
+    .box-item {
+        width: 100px;
+        height: 70px;
+        background: #d1d1d1;
+        transition: all 0.2s;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
