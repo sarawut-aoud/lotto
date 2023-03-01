@@ -3,6 +3,7 @@
 
 <head>
     <?php require_once './meta.php'; ?>
+
     <?php require_once './loadcss.php'; ?>
 
 
@@ -12,6 +13,7 @@
 <body class="bg-body">
     <?php require_once './headder.php' ?>
     <div class="container-fluid my-4">
+        <input type="hidden" value="1" id="home">
         <div class="row ">
             <div class="row mb-3  justify-content-center">
                 <div class="col-10">
@@ -48,11 +50,11 @@
             </div>
             <div class="row mb-3 justify-content-center">
                 <div class="row">
-                    <div class="mb-3 col-xxl-12 col-xl-12 col-md-12 col-sm-12">
+                    <div class="mb-3 col-xxl-8 col-xl-8 col-md-7 col-sm-12">
                         <div class="bg-light border rounded-3 box-content">
                             <div class="box-container">
                                 <?php for ($i = 0; $i <= 99; $i++) : ?>
-                                    <div class="box-item " data-number="<?= $i <= 9 ? '0' . $i : $i ?>">
+                                    <div class="box-item btnList" data-number="<?= $i <= 9 ? '0' . $i : $i ?>">
                                         <div class="box-item-image">
                                             <img src="./image/Sold-Out-PNG.png" alt="">
                                         </div>
@@ -63,6 +65,32 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mb-3 col-xxl-4 col-xl-4 col-md-5 col-sm-12">
+                        <div class="bg-light border rounded-3 box-content">
+                            <div class="content-number">
+                                <div class="text">N/A</div>
+                            </div>
+                            <div class="row w-100">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Phone</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                                </div>
+                                <div class="row text-center">
+                                    <div class="mb-3 ">
+                                        <button type="button" id="savedata" class="btn btn-primary">บันทึก</button>
+                                        <button type="button" id="canceldata" class="btn btn-secondary">ยกเลิก</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
