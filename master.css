@@ -2,7 +2,12 @@
     background-color: rgb(255, 255, 255) !important;
 }
 
-
+.nav-item {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .box-container {
     display: grid;
@@ -37,12 +42,13 @@
     font-size: 30px;
 }
 
-.content-pay .text{
+.content-pay .text {
     text-align: center;
 }
+
 .content-pay .top-number,
 .content-pay .bottom-number {
-   
+
     width: 300px;
     height: auto;
     background: cornflowerblue;
@@ -53,7 +59,7 @@
     text-align: center;
     color: white;
     box-shadow: 1px 3px 3px 0px #000;
-    margin-top:5px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
