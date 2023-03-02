@@ -10,12 +10,13 @@
 }
 
 .box-container {
-    padding: 15px;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 0.5rem;
     justify-content: left;
 }
+
 
 .box-content {
     height: 75vh;
@@ -33,11 +34,9 @@
     transition: all 0.2s;
     border-radius: 11px;
     position: relative;
+    box-shadow: 0 0 1px 1px #4e4e4e;
 }
 
-.box-item:hover {
-    outline: 2px solid red;
-}
 
 .box-item:hover .box-item-number {
     font-size: 30px;
@@ -46,10 +45,12 @@
 .box-item.active {
     background: #ffd256 !important;
 }
+
 .box-item.selector {
     background: #056819 !important;
     color: white;
 }
+
 .box-item .box-item-image {
     width: 85px;
     position: absolute;
@@ -81,7 +82,6 @@
 }
 
 .box-item:hover {
-    outline: 2px solid red;
     transform: translateY(-5px);
 }
 
@@ -170,6 +170,7 @@
 .content-number .text {
     font-size: 72px;
 }
-.card-body-content{
-    height:15vh;
+
+.card-body-content {
+    height: 15vh;
 }

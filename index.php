@@ -16,7 +16,7 @@
             <div class="row mb-3  justify-content-center">
                 <div class="col-10">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="mb-3 col-sm-12 col-md-6">
                             <div class="content">
                                 <div class="content-pirce">
                                     <div class="text">เบอร์ละ</div>
@@ -28,7 +28,7 @@
                             </div>
 
                         </div>
-                        <div class="col-6">
+                        <div class="mb-3 col-sm-12 col-md-6">
                             <div class="content-pay">
                                 <div class="text">
                                     <h1>เบอร์เงินสด</h1>

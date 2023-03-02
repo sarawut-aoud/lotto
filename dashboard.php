@@ -13,8 +13,8 @@
     <?php require_once './headder.php' ?>
     <div class="container-fluid my-4">
         <div class="col-12">
-            <div class="row mb-3 justify-content-center">
-                <div class="col-2">
+            <div class="row mb-3 justify-content-start">
+                <div class="mb-2 col-sm-6 col-md-6 col-lg-3 ">
                     <div class="bg-light border rounded-3">
                         <div class="card ">
                             <div class="card-header">
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="mb-2 col-sm-6 col-md-6 col-lg-3">
                     <div class="bg-light border rounded-3">
                         <div class="card ">
                             <div class="card-header">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="mb-2 col-sm-6 col-md-6 col-lg-3">
                     <div class="bg-light border rounded-3">
                         <div class="card ">
                             <div class="card-header">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="col-2">
+                <div class="mb-2 col-sm-6 col-md-6 col-lg-3">
                     <div class="bg-light border rounded-3">
                         <div class="card ">
                             <div class="card-header">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="col-2">
+                <div class="mb-2 col-sm-6 col-md-6 col-lg-3">
                     <div class="bg-light border rounded-3">
                         <div class="card ">
                             <div class="card-header">
@@ -116,8 +116,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-3 justify-content-center">
-                <div class="col-10">
+            <div class="row mb-3 justify-content-start">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="card">
                         <div class="card-body">
                             <div class="row mb-5 justify-content-center">
