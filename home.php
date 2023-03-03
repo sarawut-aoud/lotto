@@ -16,7 +16,7 @@
     <div id="">
         <div id="loader"></div>
     </div>
-    <div class="body-content">
+    <div class="body-content animate-bottom">
         <?php require_once './headder.php' ?>
         <div class="container-fluid my-4 ">
             <input type="hidden" value="1" id="home">

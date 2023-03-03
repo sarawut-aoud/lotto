@@ -10,7 +10,7 @@
 
 <body class="bg-body">
     <div id="loader"></div>
-    <div class="body-content">
+    <div class="body-content animate-bottom">
         <?php require_once './headder.php' ?>
         <div class="container-fluid my-4 ">
             <div class="row ">
