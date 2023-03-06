@@ -12,9 +12,8 @@
 
 
 <body class="bg-body">
-
-    <div id="">
-        <div id="loader"></div>
+    <div class="bg-loader">
+        <span class="loader"></span>
     </div>
     <div class="body-content animate-bottom">
         <?php require_once './headder.php' ?>

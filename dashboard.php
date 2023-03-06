@@ -10,7 +10,9 @@
 
 
 <body class="bg-body">
-    <div id="loader"></div>
+    <div class="bg-loader">
+        <span class="loader"></span>
+    </div>
     <div class="body-content animate-bottom">
         <?php require_once './headder.php' ?>
         <div class="container-fluid my-4 ">
@@ -24,15 +26,15 @@
                                 </div>
                                 <div class="card-body card-body-content">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="เบอร์ละ">
+                                        <input type="text" class="form-control" name="" id="pay_name" aria-describedby="helpId" placeholder="เบอร์ละ">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="50">
+                                        <input type="text" class="form-control" name="" id="pay_number" aria-describedby="helpId" placeholder="50">
                                     </div>
                                 </div>
                                 <div class="card-footer text-end">
-                                    <button type="button" class="btn btn-primary">บันทึก</button>
-                                    <button type="button" class="btn btn-secondary">ยกเลิก</button>
+                                    <button type="button" class="btn btn-primary save-data" data-module="pay">บันทึก</button>
+                                    <button type="button" class="btn btn-secondary close-data">ยกเลิก</button>
                                 </div>
                             </div>
                         </div>
@@ -49,8 +51,9 @@
                                     </div>
                                 </div>
                                 <div class="card-footer text-end">
-                                    <button type="button" class="btn btn-primary">บันทึก</button>
-                                    <button type="button" class="btn btn-secondary">ยกเลิก</button>
+                                    <button type="button" class="btn btn-primary save-data" data-module="pay">บันทึก</button>
+                                    <button type="button" class="btn btn-secondary close-data">ยกเลิก</button>
+
                                 </div>
                             </div>
                         </div>
@@ -67,8 +70,9 @@
                                     </div>
                                 </div>
                                 <div class="card-footer text-end">
-                                    <button type="button" class="btn btn-primary">บันทึก</button>
-                                    <button type="button" class="btn btn-secondary">ยกเลิก</button>
+                                    <button type="button" class="btn btn-primary save-data" data-module="topic">บันทึก</button>
+                                    <button type="button" class="btn btn-secondary close-data">ยกเลิก</button>
+
                                 </div>
                             </div>
                         </div>
@@ -89,8 +93,8 @@
                                     </div>
                                 </div>
                                 <div class="card-footer text-end">
-                                    <button type="button" class="btn btn-primary">บันทึก</button>
-                                    <button type="button" class="btn btn-secondary">ยกเลิก</button>
+                                    <button type="button" class="btn btn-primary save-data" data-module="top">บันทึก</button>
+                                    <button type="button" class="btn btn-secondary close-data">ยกเลิก</button>
                                 </div>
                             </div>
                         </div>
@@ -111,8 +115,8 @@
                                     </div>
                                 </div>
                                 <div class="card-footer text-end">
-                                    <button type="button" class="btn btn-primary">บันทึก</button>
-                                    <button type="button" class="btn btn-secondary">ยกเลิก</button>
+                                    <button type="button" class="btn btn-primary save-data" data-module="bottom">บันทึก</button>
+                                    <button type="button" class="btn btn-secondary close-data">ยกเลิก</button>
                                 </div>
                             </div>
                         </div>
