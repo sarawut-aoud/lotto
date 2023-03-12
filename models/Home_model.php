@@ -1,6 +1,6 @@
 <?php
 require_once '../config/config.php';
-class Index_model extends Database
+class Home_model extends Database
 {
     public function __construct()
     {

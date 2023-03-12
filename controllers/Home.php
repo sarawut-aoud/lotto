@@ -1,7 +1,7 @@
 <?php
-require_once '../models/Index_model.php';
+require_once '../models/Home_model.php';
 
-$model = new Index_model();
+$model = new Home_model();
 $post = $_REQUEST;
 $func = $post['function'];
 if ($func == 'index') {

@@ -47,30 +47,11 @@
                                 </div>
                                 <div class="card-body card-body-content">
                                     <div class="mb-3">
-                                        <input type="date" class="form-control" name="" id="" aria-describedby="helpId" placeholder="งวดวันที่">
+                                        <input type="date" class="form-control" name="" id="date_number" aria-describedby="helpId" placeholder="งวดวันที่">
                                     </div>
                                 </div>
                                 <div class="card-footer text-end">
-                                    <button type="button" class="btn btn-primary save-data" data-module="pay">บันทึก</button>
-                                    <button type="button" class="btn btn-secondary close-data">ยกเลิก</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-2 col-sm-6 col-md-6 col-lg-3">
-                        <div class="bg-light border rounded-3">
-                            <div class="card ">
-                                <div class="card-header">
-                                    <h5>Topic</h5>
-                                </div>
-                                <div class="card-body card-body-content">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="เบอร์เงินสด">
-                                    </div>
-                                </div>
-                                <div class="card-footer text-end">
-                                    <button type="button" class="btn btn-primary save-data" data-module="topic">บันทึก</button>
+                                    <button type="button" class="btn btn-primary save-data-date">บันทึก</button>
                                     <button type="button" class="btn btn-secondary close-data">ยกเลิก</button>
 
                                 </div>
@@ -86,10 +67,10 @@
                                 </div>
                                 <div class="card-body card-body-content">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ถูกบน">
+                                        <input type="text" class="form-control" name="" id="top_name" aria-describedby="helpId" placeholder="ถูกบน">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="300">
+                                        <input type="text" class="form-control" name="" id="top_number" aria-describedby="helpId" placeholder="300">
                                     </div>
                                 </div>
                                 <div class="card-footer text-end">
@@ -108,10 +89,10 @@
                                 </div>
                                 <div class="card-body card-body-content">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ถูกล่าง">
+                                        <input type="text" class="form-control" name="" id="bottom_name" aria-describedby="helpId" placeholder="ถูกล่าง">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="3000">
+                                        <input type="text" class="form-control" name="" id="bottom_number" aria-describedby="helpId" placeholder="3000">
                                     </div>
                                 </div>
                                 <div class="card-footer text-end">
@@ -128,8 +109,10 @@
                             <div class="card-body">
                                 <div class="row mb-5 justify-content-center">
                                     <div class="col-8">
-                                        <div class="mb-3">
-                                            <input type="date" class="form-control" name="" id="" aria-describedby="helpId" placeholder="เบอร์ละ">
+                                        <div class="mb-3 w-100">
+                                            <select  class="form-select " name="" id="">
+                                                <option>------------</option>
+                                            </select>
                                         </div>
                                     </div>
 
@@ -173,6 +156,7 @@
 
 
     <?php require_once './script.php'; ?>
+    <script src="./js_module/dashboard.js"></script>
 </body>
 
 

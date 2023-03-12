@@ -4,6 +4,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 
 <link href="./css/sweetalert2.min.css" rel="stylesheet">
+<link href="./css/select2.min.css" rel="stylesheet">
 <link href="./css/fontawesome.css" rel="stylesheet">
 <link href="./css/dataTables.bootstrap4.min.css" rel="stylesheet">
 <link href="./css/responsive.bootstrap4.min.css" rel="stylesheet">

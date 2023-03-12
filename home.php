@@ -106,6 +106,8 @@
 
 
     <?php require_once './script.php'; ?>
+    <script src="./js_module/home.js"></script>
+
 </body>
 
 
