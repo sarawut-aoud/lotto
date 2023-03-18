@@ -20,3 +20,15 @@ if ($func == 'get') {
     $json_getdata = $model->get_data();
     echo $json_getdata;
 }
+if ($func == 'date') {
+    $result = $model->savedate($post);
+    echo $result;
+}
+if ($func == 'getdate') {
+    $result = $model->get_date();
+    echo $result;
+}
+if ($func == 'getdatetable') {
+    $result = $model->get_date();
+    echo $result;
+}

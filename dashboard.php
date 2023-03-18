@@ -39,7 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-2 col-sm-6 col-md-6 col-lg-3">
+                    <div class="mb-2 col-sm-12 col-md-12 col-lg-3">
                         <div class="bg-light border rounded-3">
                             <div class="card ">
                                 <div class="card-header">
@@ -49,6 +49,7 @@
                                     <div class="mb-3">
                                         <input type="date" class="form-control" name="" id="date_number" aria-describedby="helpId" placeholder="งวดวันที่">
                                     </div>
+
                                 </div>
                                 <div class="card-footer text-end">
                                     <button type="button" class="btn btn-primary save-data-date">บันทึก</button>
@@ -102,7 +103,38 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mb-2 col-sm-12 col-md-12 col-lg-4">
+                        <div class="bg-light border rounded-3">
+                            <div class="card ">
+                                <div class="card-header">
+                                    <h5>set Date</h5>
+                                </div>
+                                <div class="card-body card-body-content">
+
+                                    <div class="mb-3 ">
+                                        <table id="tabledate" class="table table-hover table-bordered" style="width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th>เลข</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="contentdate">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end">
+                                    <button type="button" class="btn btn-primary save-data-date">บันทึก</button>
+                                    <button type="button" class="btn btn-secondary close-data">ยกเลิก</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="row mb-3 justify-content-start">
                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <div class="card">
@@ -110,10 +142,11 @@
                                 <div class="row mb-5 justify-content-center">
                                     <div class="col-8">
                                         <div class="mb-3 w-100">
-                                            <select  class="form-select " name="" id="">
+                                            <select class="form-select " name="" id="date-select">
                                                 <option>------------</option>
                                             </select>
                                         </div>
+
                                     </div>
 
                                     <div class="row text-center">

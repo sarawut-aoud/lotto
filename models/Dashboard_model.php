@@ -79,4 +79,49 @@ class Dashboard_model extends Database
         }
         return true;
     }
+    public function savedate($post)
+    {
+        $post = (object)array(
+            'date' => date('Y-m-d', strtotime($post['date'])),
+        );
+
+        $result =  mysqli_query($this->dbcon, "SELECT * FROM lotto_date WHERE `date` = '{$post->date}'");
+        $rs =  $result->fetch_all();
+
+        $msg = 'มีข้อมูลในระบบแล้ว';
+
+        if (empty($rs)) {
+            $result =    mysqli_query($this->dbcon, "INSERT INTO `lotto_date`(`date`) VALUES ('$post->date')");
+            $this->status = true;
+            $msg = 'บันทึกสำเสร็จ';
+        }
+        $json = array(
+            'status' => $this->status,
+            'data' => $msg,
+            'code' => $this->code,
+        );
+        return json_encode($json);
+    }
+    public function get_date()
+    {
+        $result =  mysqli_query($this->dbcon, "SELECT id,DATE_FORMAT(`date`,'%d-%M-%Y') as `date` FROM lotto_date ");
+        
+        $data = [];
+        $rs = mysqli_num_rows($result);
+        
+        if ($rs > 0) {
+            $this->status = true;
+            $i = 0;
+            while ($row = $result->fetch_object()) {
+                $data[] = $row;
+            }
+            $json = array(
+                'status' => $this->status,
+                'data' => $data,
+                'code' => $this->code,
+            );
+        }
+
+        return json_encode($json);
+    }
 }
